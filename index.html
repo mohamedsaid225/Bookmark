@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+    rel="stylesheet">
+  <link href="
+        https://cdn.jsdelivr.net/npm/sweetalert2@11.14.0/dist/sweetalert2.min.css
+        " rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main style="background-color: #f7ecde; min-height: 100vh;">
+    <div class="container d-flex justify-content-center align-items-center flex-column py-5 w-100">
+      <h1 class="h1-head">
+        Bookmarker
+      </h1>
+      <div class="content py-3 mt-5 w-100">
+        <h2 class="h2-body text-black text-center ">
+          <li class="fa-solid fa-bookmark fa-md"></li>
+          Bookmark your favorite sites
+          <li class="fa-solid fa-bookmark fa-md"></li>
+        </h2>
+        <div class="ps-2 pt-4">
+          <label for="bookmark-name" class="site-name fw-semibold ">
+            <li class="fa-solid fa-book-bookmark pe-2"></li>
+            Site Name
+          </label>
+          <input type="text" id="bookMarkName" oninput="validateForm(this)" placeholder="Bookmark Name"
+            class="form-control mt-2 ">
+          <label for="bookmark-URL" class="site-URL fw-semibold mt-4">
+            <li class="fa-solid fa-link pe-1"></li>
+            Site URL
+          </label>
+          <input type="url" id="bookMarkURL" oninput="validateForm(this)" placeholder="Website URL"
+            class="form-control mt-2">
+          <div class="text-center mt-4">
+            <button class="btn btn-submit px-5" 
+              onclick="Submit()" id="btn-sub">Submit</button>
+          </div>
+
+        </div>
+      </div>
+      <table class="table mt-4 text-center bg-light mb-5">
+        <thead>
+          <tr>
+            <th class="text-capitalize">Index</th>
+            <th class="text-capitalize">Website Name</th>
+            <th class="text-capitalize">Visit</th>
+            <th class="text-capitalize">Delete</th>
+          </tr>
+        </thead>
+        <tbody id="t-content">
+        </tbody>
+      </table>
+
+
+
+
+    </div>
+  </main>
+  <div id="modal" class="">
+    
+  </div>
+  
+
+
+
+
+
+  <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.14.0/dist/sweetalert2.all.min.js
+    "></script>
+  <script src="js/index.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
